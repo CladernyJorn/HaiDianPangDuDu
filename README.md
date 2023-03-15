@@ -8,7 +8,7 @@ To run and play the game, please follow the instructions below.
 1. Download the Code base.
 2. Click on the shortcut in the main directory.
 
-Please notice that all the temporary data are on your own computer instead of remote server.
+Please notice that all the temporary data is on your browser instead of remote server.
 
 ![Snipaste_2023-03-15_15-57-32](https://github.com/CladernyJorn/HaiDianPangDuDu/blob/main/README.assets/Snipaste_2023-03-15_15-57-32.png)
 
