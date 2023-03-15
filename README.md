@@ -1,5 +1,5 @@
 # HaiDianPangDuDu
-This is a **code repository for an internet interactive game**, which includes all the code and design documents for our project as well as an introductory video.
+This is a **code repository for an internet interactive game** (created in 2021.09), which includes all the code and design documents for our project as well as an introductory video.
 
 At the same time, we have also written a **comprehensive beginner-level tutorial for HTML and CSS**, each including a document, accompanying demonstration code, and exercises, which can be used for beginners to learn.
 
