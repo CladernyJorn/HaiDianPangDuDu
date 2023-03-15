@@ -1,0 +1,57 @@
+
+#container{
+    background-image: url("../../Icons/背景故事.jpg");
+    height:600px;
+    width: 600px;
+    margin-top: 50px;
+    margin-left:200px;
+    overflow: hidden;
+}
+#c1{
+    width: 620px;
+    height:600px;
+    overflow-y: scroll;
+}
+h2{
+    font-family: 楷体;
+    color:  white;
+    text-align: center;
+    font-size: 1.5em;
+}
+h1{
+    font-weight: bold;
+    font-family: 楷体;
+    color:  white;
+    margin-top: 5%;
+    text-align: center;
+    font-size: 4em;
+}
+#int{
+    width:90%;
+    text-align: left;
+    color:  #e23434;
+    /* margin-top: 10%; */
+    margin-left: 30px;
+    font-family: 楷体;
+    font-size: 24;
+}
+
+.btn{
+    vertical-align: center;
+}
+.button{
+    height: 105px;
+    width: 170px;
+    border-radius: 30px;
+    font: 25px 黑体; color:white;
+    text-align: center;
+    background-image: linear-gradient(gray,rgba(0, 0, 0, 0.911),black,rgba(0, 0, 0, 0.911),gray);
+}
+.button:hover{
+    background-image: url("../../Icons/按钮.png");
+    font-weight: 700;
+    font:33px 黑体 ;color: white;
+    text-align: center;
+    transition-duration: 0.5s;
+    box-shadow: 0 6px 8px 0 black, 0 12px 18px gray;
+}

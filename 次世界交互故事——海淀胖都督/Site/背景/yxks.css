@@ -1,0 +1,26 @@
+body{
+    background-image: url(../../Icons/游戏开始背景图.jpeg);
+    background-size: cover;
+}
+h1{
+    text-align: center;
+    margin-top: 15%;
+    font-size: 7em;
+    color: gold;
+    text-shadow: rgb(172, 172, 230) 5px 5px 5px 5px;
+    transition: 0.5s;
+}
+h1:hover{   
+    text-align: center;
+    margin-top: 13%;
+    font-size: 8em;
+    color: rgb(194, 35, 30);
+    text-shadow: rgb(231, 152, 4) 10px 10px 10px 10px;
+    transition: 0.5s;
+}
+h2{
+    font-size: 2em;
+    text-align: center;
+    color: white;
+    margin-top: 35%;
+}

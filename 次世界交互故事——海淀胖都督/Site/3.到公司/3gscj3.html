@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>次世界</title>
+        <link href="../../MasterCSS/master.css" rel="stylesheet">
+        <link href="ben.css" rel="stylesheet">
+        <script type="text/javascript" src="../../jquery.js"></script>
+    </head>
+    <body onselectstart="return false;">
+        <div id="sl1"></div>
+        <div id="sl2"></div>
+        <div id="sl3"></div>
+        <div id="sw1"></div>
+        <div id="sw2"></div>
+        <div id="bjxb"></div>
+        <div id="bjxb1"></div>
+        <div></div> 
+        <div class="dialog" onclick="bian();">
+            <div class="pic"></div>
+            <div id="box" class="box">
+                <!-- 952*173 -->
+                <div id="content" class="content"></div>   
+            </div>
+        </div>
+    </body>
+    <script>
+    var a = ["可恶，这里守卫太多了",
+        "不能在外面就弄出大动静，得赶快找个防守松懈的地方溜进去。",
+        //小游戏
+        "呼，要冷静…一定要冷静……",
+        "不好，那边有人来了，快躲起来",
+        //小游戏
+        "好险，差点就被发现了，这里离中央控制室应该不远了。",
+        "什么人！",
+        "可恶，没办法了，只能上了！",
+        //小游戏
+        "哈哈哈…这不是…真的…（死亡）",
+        "什么意思！该死，这公司果然不正常。这里不能久留，得赶紧完成任务后离开。",
+        "(在解决了几个巡逻守卫之后，斯里来到了中央控制室。)"
+       ];
+var f = 7;
+var index = 0;
+var alpha = document.getElementById("content");
+// var height = alpha.clientHeight/4;                  //设置字体大小和行距
+// $("#content").css("font-size",height+"px");
+// $("#content").css("line-height",(height+5)+"px");
+if(f==7){
+       alpha.innerHTML= a[f];
+       $("#bjxb").css("opacity","0");
+       $("#bjxb1").css("opacity","0");
+       $("#sl1").css("opacity","0");
+       $("#sl2").css("opacity","0");
+       $("#sl3").css("opacity","0");
+       $("#sw1").css("opacity","0");
+       $("#sw2").css("opacity","1");
+       $("body").css("background-image","url("+"../../Icons/公司场景二.jpg"+")");
+       f++;
+   }
+function bian(){
+   index =0;
+   if(f==8){
+       $("#sl1").css("opacity","0");
+       $("#sl2").css("opacity","0");
+       $("#sl3").css("opacity","1");
+       $("#sw2").css("opacity","1");
+       alpha.innerHTML= a[f];
+   } 
+   if(f==9){
+    $("#sl3").css("opacity","0");
+    $("#sw2").css("opacity","0");
+    $("body").css("background-image","url("+"../../Icons/控制室大门.jpg"+")");
+       alpha.innerHTML= a[f];
+   } 
+   if(f==10){
+    
+    window.location.assign("../5.中央控制室对话/5zy.html");
+   }
+   
+   f++;
+}
+</script>
+</html>

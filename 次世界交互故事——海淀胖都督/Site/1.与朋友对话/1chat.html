@@ -1,0 +1,130 @@
+<html>
+    <head>
+        <title>次世界</title>
+        <script type="text/javascript" src="../../MasterCss/masterjs.js"></script>
+        <script type="text/javascript" src="../../jquery.js"></script>
+        <script src="../bootstrap/js/jquery-3.4.1.slim.min.js"></script>
+        <script src="../../存档系统.js"></script>
+        <link href="../../MasterCSS/master.css" rel="stylesheet">
+        <link href="ben.css" rel="stylesheet">
+        <script type="text/javascript" src="1.chat.js"></script>
+    </head>
+    <body onselectstart="return false;">
+        <div id="set" onclick="setting()"><p>设置</p></div>
+        <div id="A"></div>
+        <div id="B"></div>
+        <div id="A2"></div>
+        <div></div> 
+        <div class="dialog" onclick="bian();">
+            <div class="pic"></div>
+            <div id="box" class="box">
+                <!-- 952*173 -->
+                <div id="content" class="content"></div>   
+            </div>
+        </div>
+        <div id="sztc">
+            <div class="sztc1">
+                <h1>设置</h1>
+                <div class="btn"><button class="button" onclick="save1()">存档</button></div>
+                <div class="btn"><button class="button" onclick="getout()">退出</button></div>
+                <div class="btn" id="ba"><button class="button" onclick="setting()">返回</button></div>
+            </div>
+        </div>
+        <div id="qdtc">
+            <div class="qdtc1">
+                <h1>确定退出</h1>
+                <div class="btn"><button class="button" onclick="save1(),backtoindex()">存档退出</button></div>
+                <div class="btn"><button class="button" onclick="backtoindex()">直接退出</button></div>
+                <div class="btn"><button class="button" onclick="getout()">返回</button></div>
+            </div>
+        </div>
+    </body>
+    <script>
+    var a = ["准备好了吗，兄弟",
+        "一切就绪。",
+        "嗯，我相信你，这可是教会最新研发出的装备，而且凭你的实力，就算没有它，摧毁一个中央计算机也不成问题。",
+        "你可别开玩笑了，这飞科市里就属三生公司的戒备最为森严。我等了这么久，就是为了要一个万无一失的机会，让那该死的“次世界”彻底消失，给我父母，和所有因这款游戏而失去生命的人报仇！",
+        "啊…对啊…不好意思，又让你难过了。",
+        "没关系，都过去了，都过去了……",
+        "对了，我听说你也体验过那个游戏，真的有公司宣传得那么厉害吗？",
+        "是的，那里面的世界和教会所追求的几乎一模一样，有着比现在还要发达的科技和二十一世纪的环境，没有阶级压迫，没有专制主义，没有恐怖行动，我在那里面无忧无虑地度过了幸福快乐的一生。",
+        "那你为什么没像那些人一样厌恶这个几乎看不到什么希望的世界？",
+        "因为在这里有你，有教会，有飞科市，有我所珍惜的一切，我想为之奋斗的一切。那无忧无虑的一生就当是一场美好的梦吧。",
+        "不愧是我的好兄弟。我就不耽误你时间了，切记一定要保持冷静，多加小心，回来后我请你喝酒。",
+        "一言为定。"
+       ];
+var f = 0;
+var index = 0;
+var alpha = document.getElementById("content");
+// var height = alpha.clientHeight/4;                  //设置字体大小和行距
+// $("#content").css("font-size",height+"px");
+// $("#content").css("line-height",(height+5)+"px");
+if(f==0){
+       alpha.innerHTML= a[f];
+       $("#A").css("opacity","1");
+       $("#B").css("opacity","0");
+       f++;
+   }
+function bian(){
+   index =0;
+   alpha.innerHTML = '';
+   if(f==1){
+       $("#B").css("opacity","1");
+       $("#A").css("opacity","0");
+       alpha.innerHTML= a[f];
+   }if(f==2){
+       $("#A").css("opacity","1");
+       $("#B").css("opacity","0");
+       alpha.innerHTML= a[f];
+   }if(f==3){
+       alpha.innerHTML= a[f];
+       $("#B").css("opacity","1");
+       $("#A").css("opacity","0");
+   }if(f==4){
+       $("#A").css("opacity","0");
+       $("#A2").css("opacity","1");
+       $("#B").css("opacity","0");
+       alpha.innerHTML= a[f];
+   }if(f==5){
+    alpha.innerHTML= a[f];
+       $("#A2").css("opacity","0");
+       $("#B").css("opacity","1");
+       $("#A").css("opacity","0");
+   }
+   if(f==6){
+    $("#A").css("opacity","1");
+       $("#B").css("opacity","0");
+       alpha.innerHTML= a[f];
+   }
+   if(f==7){
+    alpha.innerHTML= a[f];
+       $("#B").css("opacity","1");
+       $("#A").css("opacity","0");
+   }
+   if(f==8){
+    $("#A").css("opacity","1");
+       $("#B").css("opacity","0");
+       alpha.innerHTML= a[f];
+   }
+   if(f==9){
+    alpha.innerHTML= a[f];
+       $("#B").css("opacity","1");
+       $("#A").css("opacity","0");
+   }
+   if(f==10){
+    $("#A").css("opacity","1");
+       $("#B").css("opacity","0");
+       alpha.innerHTML= a[f];
+   }
+   if(f==11){
+    alpha.innerHTML= a[f];
+       $("#B").css("opacity","1");
+       $("#A").css("opacity","0");
+   }
+   if(f==12){
+       enternext();
+   }
+   f++;
+}
+</script>
+</html>

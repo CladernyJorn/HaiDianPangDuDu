@@ -1,0 +1,39 @@
+body{
+    background-image: url("../../Icons/1-1.jpg");
+    background-size: cover;
+    background-color: black;
+}
+
+#B{
+    position: absolute;
+    left: -50px;
+    bottom:-270px;
+    height: 1200px;
+    width: 320px;
+    background-image: url("../../Icons/斯里1.png");
+    background-size: cover;
+    opacity: 0;
+    transform:scale(0.5,0.5)
+}
+#A2{
+    position: absolute;
+    right: -50px;
+    bottom:-270px;
+    height: 1200px;
+    width: 320px;
+    background-image: url("../../Icons/罗伊尔2（慌忙道歉）.png");
+    background-size: cover;
+    opacity: 0;
+    transform:scale(0.5,0.5)
+}
+#A{
+    position: absolute;
+    right: -50px;
+    bottom:-270px;
+    height: 1200px;
+    width: 320px;
+    background-image: url("../../Icons/罗伊尔1.png");
+    background-size: cover;
+    opacity: 0;
+    transform:scale(0.5,0.5)
+}

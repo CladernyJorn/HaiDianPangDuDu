@@ -1,0 +1,188 @@
+<html>
+    <head>
+        <title>次世界</title>
+        <link href="../../MasterCSS/master.css" rel="stylesheet">
+        <link href="ben.css" rel="stylesheet">
+        <script type="text/javascript" src="../../jquery.js"></script>
+        <script type="text/javascript" src="../../MasterCss/masterjs.js"></script>
+        <script src="../../存档系统.js"></script>
+    </head>
+    <body onselectstart="return false;">
+      <div id="set" onclick="setting()"><p>设置</p></div>
+        <div id="sl1" class="cha"></div>
+        <div id="sl2" class="cha"></div>
+        <div id="sl3" class="cha"></div>
+        <div id="sbl1" class="cha"></div>
+        <div></div> 
+        <div class="dialog" onclick="bian();">
+         <div class="pic"></div>
+            <div id="box" class="box">
+                <!-- 952*173 -->
+                <div id="content" class="content"></div>   
+            </div>
+        </div>
+        <div id="sztc">
+         <div class="sztc1">
+             <h1>设置</h1>
+             <div class="btn"><button class="button" onclick="save4()">存档</button></div>
+             <div class="btn"><button class="button" onclick="getout()">退出</button></div>
+             <div class="btn" id="ba"><button class="button" onclick="setting()">返回</button></div>
+         </div>
+     </div>
+     <div id="qdtc">
+         <div class="qdtc1">
+             <h1>确定退出？</h1>
+             <div class="btn"><button class="button" onclick="save4(),backtoindex()">存档退出</button></div>
+             <div class="btn"><button class="button" onclick="backtoindex()">直接退出</button></div>
+             <div class="btn"><button class="button" onclick="getout()">返回</button></div>
+         </div>
+     </div>
+    </body>
+    <script>
+    var a = ["就是这了，那台机器应该就是中央计算机了。",
+        "你终于来了。",
+         "你是谁？",
+        "我叫斯拜乐·霸格，是“次世界”的研发者，今天专程来接待你，不要紧张。",
+        "接待我？为什么？",
+        "因为你是“玩家”。",
+        "什么玩家，我对你那个破游戏一点也不感兴趣！",
+        "哈哈哈，你，就是“玩家”。先不说这些了，你，为什么要毁掉我的游戏？",
+        "因为你的游戏让许多玩家厌恶真实的世界，把所有的钱都拿来玩你这所谓的“完美世界”，你让他们倾家荡产，你把他们逼上绝路。",
+        "真实，呵呵呵，真实，有意思。你说我把他们逼上绝路，那我是用刀架在他们的脖子上逼他们玩我的游戏，还是用枪指着他们逼他们自杀了？他们的结局，不都是他们自己选择的吗？",
+        "但是他们本不用做出这样绝望的选择，他们本可以在现实世界中通过努力一点点实现自己的理想，为这座城市的未来增添希望。可是你和你的游戏，却让他们的整个后半生都在幻梦中度过。",
+        "你让他们的人生失去了意义！",
+        "意义？别开玩笑了，这个世界少了谁不是一样的运行。",
+        "至于什么所谓的理想，你又不是不清楚，有些人一出生就注定实现不了那可悲的理想，你在上学的时候，理想就是当那么一个小警察？",
+        "可是，你…",
+        "是我！是我帮他们实现了他们的理想！是我让他们过上了他们想要的生活！是我让他们体验到了你口中真实的世界永远体验不到的幸福和快乐！",
+        "什么真真假假假假真真的，这一辈子走完，不都没有意义了吗！",
+        "一派胡言！这些都不过是你利用人性来赚取黑心钱的借口罢了，你这个杀害我父母和飞科市许多无辜市民的凶手！",
+        "今天，谁也别想阻止我摧毁这台该死的机器！",
+        "有意思，你可以试试。"
+    ];
+var f = 0;
+var index = 0;
+var alpha = document.getElementById("content");
+// var height = alpha.clientHeight/4;                  //设置字体大小和行距
+// $("#content").css("font-size",height+"px");
+// $("#content").css("line-height",(height+5)+"px");
+if(f==0){
+       alpha.innerHTML= a[f];
+       $("#sl1").css("opacity","1");
+       f++;
+   }
+function bian(){
+   index =0;
+   if(f==1){
+       $("#sl1").css("opacity","0");
+       $("#sbl1").css("opacity","1");
+       alpha.innerHTML= a[f];
+   } 
+   if(f==2){
+       $("#sl1").css("opacity","1");
+       $("#sbl1").css("opacity","0");
+       alpha.innerHTML= a[f];
+    }
+    if(f==3){
+       $("#sl1").css("opacity","0");
+       $("#sbl1").css("opacity","1");
+       alpha.innerHTML= a[f];
+    }
+    if(f==4){
+       $("#sl1").css("opacity","1");
+       $("#sbl1").css("opacity","0");
+       alpha.innerHTML= a[f];
+    }
+    if(f==5){
+       $("#sl1").css("opacity","0");
+       $("#sbl1").css("opacity","1");
+       alpha.innerHTML= a[f];
+    }
+    if(f==6){
+       $("#sl1").css("opacity","0");
+       $("#sl2").css("opacity","1");
+       $("#sbl1").css("opacity","0");
+       alpha.innerHTML= a[f];
+    }
+    if(f==7){
+       $("#sl2").css("opacity","0");
+       $("#sbl1").css("opacity","1");
+       alpha.innerHTML= a[f];
+    }
+    if(f==8){
+       $("#sl2").css("opacity","1");
+       $("#sbl1").css("opacity","0");
+       alpha.innerHTML= a[f];
+    }
+    if(f==9){
+       $("#sl2").css("opacity","0");
+       $("#sbl1").css("opacity","1");
+       alpha.innerHTML= a[f];
+    }
+    if(f==10){
+       $("#sl2").css("opacity","1");
+       $("#sbl1").css("opacity","0");
+       alpha.innerHTML= a[f];
+    }
+    if(f==11){
+       $("#sl2").css("opacity","1");
+       $("#sbl1").css("opacity","0");
+       alpha.innerHTML= a[f];
+    }
+    if(f==12){
+       $("#sl2").css("opacity","0");
+       $("#sbl1").css("opacity","1");
+       alpha.innerHTML= a[f];
+    }
+    if(f==13){
+       $("#sl2").css("opacity","0");
+       $("#sbl1").css("opacity","1");
+       alpha.innerHTML= a[f];
+    }
+    if(f==14){
+       $("#sl2").css("opacity","1");
+       $("#sbl1").css("opacity","0");
+       alpha.innerHTML= a[f];
+    }
+    if(f==15){
+       $("#sl2").css("opacity","0");
+       $("#sbl1").css("opacity","1");
+       alpha.innerHTML= a[f];
+    }
+    if(f==16){
+       $("#sl2").css("opacity","0");
+       $("#sbl1").css("opacity","1");
+       alpha.innerHTML= a[f];
+    }
+    if(f==17){
+       $("#sl2").css("opacity","1");
+       $("#sbl1").css("opacity","0");
+       alpha.innerHTML= a[f];
+    }
+    if(f==18){
+       $("#sl2").css("opacity","0");
+       $("#sl3").css("opacity","1");
+       $("#sbl1").css("opacity","0");
+       alpha.innerHTML= a[f];
+    }
+    if(f==19){
+       $("#sl2").css("opacity","0");
+       $("#sbl1").css("opacity","1");
+       alpha.innerHTML= a[f];
+    }
+   //  if(f==20){
+ 
+   //      window.location.assign("lose.html");
+   //  }
+   //增添小游戏后修改
+   if(f==20){
+ 
+       window.location.assign("2048/2048.html");
+   }
+ 
+
+  
+   f++;
+}
+</script>
+</html>

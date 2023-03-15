@@ -1,0 +1,156 @@
+@font-face {
+    font-family: "和悦体";
+    font-display: swap;
+    src: local("和悦体"),
+         url("../fonts/和悦体.TTF")format("truetype");
+}
+
+@font-face {
+    font-family: "惊鸿体";
+    font-display: swap;
+    src: local("惊鸿体"),
+         url("../fonts/惊鸿体.TTF")format("truetype");
+}
+@font-face {
+    font-family: "敬酷黑";
+    font-display: swap;
+    src: local("敬酷黑"),
+         url("../fonts/敬酷黑.TTF")format("truetype");
+}
+body{
+    background-image: url(../../Icons/背景图1.jpg);
+    background-size: cover;
+}
+.box{
+    /* position: absolute; */
+    width: 250px;
+    height: 600px;
+    top: 15%; 
+    /* right:10px; */
+}
+.btn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.button{
+    height: 105px;
+    width: 170px;
+    border-radius: 30px;
+    font: 25px 华文新魏; color:white;
+    text-align: center;
+    background-image: linear-gradient(gray,rgba(0, 0, 0, 0.911),black,rgba(0, 0, 0, 0.911),gray);
+}
+.button:hover{
+    background-image: url("../../Icons/按钮.png");
+    font-weight: 700;
+    font:33px 和悦体 ;color: white;
+    text-align: center;
+    transition-duration: 0.5s;
+    box-shadow: 0 6px 8px 0 black, 0 12px 18px gray;
+}
+.roll_box{
+    width: 600px;
+    height: 337px;
+    /* position: absolute;
+    right: 55%; */
+    top: 20%;
+}
+.roll_img{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    opacity: 0;
+    transition: all 1s;
+}
+.roll_img:nth-child(1){
+    opacity: 1;
+}
+.roll_left{
+    /* position: absolute; */
+    width: 35px;
+    height: 70px;
+    color: gray;
+    top: 133px;
+    border-radius: 0 5px 5px 0;
+    text-align: center;
+    line-height: 70px;
+    font-size: 27px;
+}
+.roll_left:hover{
+    background-color: #000000a1;
+    color: white;
+    cursor: default;
+}
+.roll_right{
+    position: absolute;
+    width: 35px;
+    height: 70px;
+    color: gray;
+    top: 133px;
+    right: 0px;
+    border-radius: 5px 0 0 5px;
+    text-align: center;
+    line-height: 70px;
+    font-size: 27px;
+}
+.roll_right:hover{
+    background-color: #000000a1;
+    color: white;
+    cursor: default;
+}
+.roll_bottom{
+    /* position: absolute; */
+    /* bottom:25px;
+    right: 80px; */
+    left: 40%;
+    top: 60%;
+}
+.roll_bottom ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+}
+.roll_bottom li{
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    background-color: rgb(129, 129, 129);
+    float: left;
+    margin-right: 15px;
+}
+.bottom:hover{
+    cursor: hand;
+}
+.gamename{
+    /* position: absolute;
+    right: 62%;*/
+    top: 85%; 
+    margin: auto;
+    font-size: 10em;
+    color:rgb(250, 171, 0);
+    text-shadow: 2px 2px 8px white;
+    font-family:华文新魏;
+}
+.gameintr{
+    /* position: absolute; */
+    width:500px;
+    height:600px;
+    /* right: 20%;*/
+    margin-top: 10%; 
+    margin-left:10%;
+    font-size: 2em;
+    line-height:1em;
+    color:rgb(255, 255, 255);
+    font-family:楷体;
+    text-shadow:1px 1px orange;
+    background-size:cover;
+    background-position: center;
+    background-color: rgba(63, 83, 73, 0.8);
+    
+}
+#container{
+    left: 10%;
+    right:10px;
+    top:10%;
+}

@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>次世界</title>
+        <link href="../../MasterCSS/master.css" rel="stylesheet">
+        <link href="ben.css" rel="stylesheet">
+        <script type="text/javascript" src="../../jquery.js"></script>
+        <script type="text/javascript" src="../../MasterCss/masterjs.js"></script>
+        <script src="../../存档系统.js"></script>
+    </head>
+    <body onselectstart="return false;">
+        <div id="set" onclick="setting()"><p>设置</p></div>
+        <div id="sl1" class="cha"></div>
+        <div id="sl2" class="cha"></div>
+        <div id="sl3" class="cha"></div>
+        <div id="bssl" class="cha"></div>
+        <div id="sbl1" class="cha"></div>
+        <div id="sbl2" class="cha"></div>
+        <div></div> 
+        <div class="dialog" onclick="bian();">
+            <div class="pic"></div>
+            <div id="box" class="box">
+                <!-- 952*173 -->
+                <div id="content" class="content"></div>   
+            </div>
+        </div>
+        <div id="sztc">
+            <div class="sztc1">
+                <h1>设置</h1>
+                <div class="btn"><button class="button" onclick="save4()">存档</button></div>
+                <div class="btn"><button class="button" onclick="getout()">退出</button></div>
+                <div class="btn" id="ba"><button class="button" onclick="setting()">返回</button></div>
+            </div>
+        </div>
+        <div id="qdtc">
+            <div class="qdtc1">
+                <h1>确定退出？</h1>
+                <div class="btn"><button class="button" onclick="save4(),backtoindex()">存档退出</button></div>
+                <div class="btn"><button class="button" onclick="backtoindex()">直接退出</button></div>
+                <div class="btn"><button class="button" onclick="getout()">返回</button></div>
+            </div>
+        </div>
+    </body>
+    <script>
+    var a = [ 
+        "这怎么……可能……",
+        "我怎么……会在这里……倒下……",
+        "真遗憾，我的小英雄，“游戏”结束了……"
+    ];
+var f = 0;
+var index = 0;
+var alpha = document.getElementById("content");
+// var height = alpha.clientHeight/4;                  //设置字体大小和行距
+// $("#content").css("font-size",height+"px");
+// $("#content").css("line-height",(height+5)+"px");
+if(f==0){
+       alpha.innerHTML= a[f];
+       $("#bssl").css("opacity","1");
+       f++;
+   }
+function bian(){
+   index =0;
+   if(f==1){
+       $("#bssl").css("opacity","1");
+       alpha.innerHTML= a[f];
+   } 
+   if(f==2){
+        $("#bssl").css("opacity","0");
+        $("#sbl2").css("opacity","1");
+       alpha.innerHTML= a[f];
+   } 
+    if(f==3){
+ 
+        window.location.assign("../结局1.饮恨败北/jj1yhbb.html");
+    }
+ 
+
+  
+   f++;
+}
+</script>
+</html>

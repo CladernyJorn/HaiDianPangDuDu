@@ -1,0 +1,223 @@
+
+
+h1{
+    text-align: center;
+    font-size: 4em;
+    color:rgb(207, 207, 63);
+    text-shadow: 2px 2px 8px white;
+    font-weight: bold;
+}
+
+.row{
+    margin-top: 25px;
+}
+#teamint1{
+    height:325px;
+    width:800px;
+    position: relative;
+    margin: auto;
+    text-shadow:1px 1px orange;
+}
+
+#teamint{
+    text-indent: 2em;
+    font-family: 楷体;
+    font-size: 26;
+    color:red;
+    line-height: 2em;
+    margin-top:30px;
+    margin-left: -30px;
+}
+#memint{
+    /* margin-top: -10px; */
+    font-size: 3em;
+    text-align: center;
+    color:lightyellow;
+}
+#container{ 
+    width:1000px;
+    height: 60px;
+    transition:0.5s;
+    /* padding:20px; */
+    /* margin-top:70px; */
+    align-items :center;
+    /* margin-left:-50px; */
+    margin:auto
+} 
+ .content{
+    position:left;
+    max-width: 800px;
+}
+.bighead{
+    width: 220px;
+    height: 220px;
+    margin-left: -100px;
+    margin-top: -25px;
+}
+.wyqbighead{
+    width: 230px;
+    height: 230px;
+    margin-left: -100px;
+    margin-top: -25px;
+}
+
+/* 背景虚化（可不用） */
+/* #zjktx.active{
+    filter:blur(20px);
+    pointer-events:none;
+    user-select:none;
+} */
+
+#zjktx{
+    position:relative;
+    width:25%;
+    height:100px;
+    float: left;
+}
+#wjhtx{
+    position:relative;
+    width:25%;
+    height:100px;
+    float: left;
+}
+#wyqtx{
+    position:relative;
+    width:25%;
+    height:100px;
+    float: left;
+}
+#lymtx{
+    position:relative;
+    width:25%;
+    height:100px;
+    float: left;
+}
+
+#zjktc{
+    position:fixed;
+    top:40%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:600px;
+    height:450px;
+    padding:50px;
+    box-shadow:0 5px 30px rgba(0,0,0,0);
+    visibility:hidden;
+    opacity:0;
+    transition:0.5s;
+    background-image: url("../../Icons/tc背景图.jpg");
+}
+#wjhtc{
+    position:fixed;
+    top:40%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:600px;
+    height:450px;
+    padding:50px;
+    box-shadow:0 5px 30px rgba(0,0,0,0);
+    visibility:hidden;
+    opacity:0;
+    transition:0.5s;
+    background-image: url("../../Icons/tc背景图.jpg");
+}
+#wyqtc{
+    position:fixed;
+    top:40%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:600px;
+    height:450px;
+    padding:50px;
+    box-shadow:0 5px 30px rgba(0,0,0,0);
+    visibility:hidden;
+    opacity:0;
+    transition:0.5s;
+    background-image: url("../../Icons/tc背景图.jpg");
+}
+#lymtc{
+    position:fixed;
+    top:40%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:600px;
+    height:450px;
+    padding:50px;
+    box-shadow:0 5px 30px rgba(0,0,0,0);
+    visibility:hidden;
+    opacity:0;
+    transition:0.5s;
+    background-image: url("../../Icons/tc背景图.jpg");
+}
+/* 弹出统一框排版 */
+.jszp{
+    margin: 5px 5px ;
+    color:floralwhite;
+}
+.jszp img{
+    width:40%;
+}
+ 
+.jswz{
+    width:300px;
+    margin-left: 240px;
+    margin-top:-380px;
+    line-height:1.2;
+    font-family: 楷体;
+    font-size: larger;
+    color:gold;
+    font-weight: bolder;
+}
+.return{
+    text-align: right;
+    margin-bottom: 600px;
+}
+.aret{
+    text-decoration: none;
+    color:lightgoldenrodyellow;
+}
+ 
+#zjktc.active{
+    top:50%;
+    visibility:visible;
+    opacity:1;
+    transition:0.5s;
+
+}
+#wjhtc.active{
+    top:50%;
+    visibility:visible;
+    opacity:1;
+    transition:0.5s;
+}
+#wyqtc.active{
+    top:50%;
+    visibility:visible;
+    opacity:1;
+    transition:0.5s;
+}
+#lymtc.active{
+    top:50%;
+    visibility:visible;
+    opacity:1;
+    transition:0.5s;
+}
+#back{
+    margin-left: 50px;
+    margin-bottom: 50px;
+    font-size: 26;
+    text-decoration: none;
+    color:aliceblue;
+}
+#back:hover{
+    text-decoration: underline;
+    color:pink
+}
+
+#back1{
+    height:100px;
+    width: 200px;
+    margin-left:40%;
+    position: relative;
+    
+}

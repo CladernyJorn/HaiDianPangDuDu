@@ -1,0 +1,23 @@
+body{
+    background-image: url("../../../Icons/公司场景二.jpg");
+    background-size: cover;
+    background-color: black;
+    text-align: center;
+}
+#snake{
+	margin-top: 100px;
+    background-color: rgba(0,0,0,0.5);
+}
+#tishi{
+    margin: auto;
+}
+#tishi h2{
+    text-align: center;
+    font-size: 32;
+    font-family: 楷体;
+    color:white;
+}
+h4{
+    color: white;
+    font-size: 26;
+}

@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <title>次世界</title>
+        <link href="../../MasterCSS/master.css" rel="stylesheet">
+        <link href="ben.css" rel="stylesheet">
+        <script type="text/javascript" src="../../jquery.js"></script>
+        <script type="text/javascript" src="../../MasterCss/masterjs.js"></script>
+        <script src="../../存档系统.js"></script>
+    </head>
+    <body onselectstart="return false;">
+        <div id="set" onclick="setting()"><p>设置</p></div>
+        <div id="sl1" class="cha"></div>
+        <div id="sl2" class="cha"></div>
+        <div id="sl3" class="cha"></div>
+        <div id="sw1" class="cha"></div>
+        <div id="bjxb" class="cha"></div>
+        <div id="bjxb1" class="cha"></div>
+        <div></div> 
+        <div class="dialog" onclick="bian();">
+            <div class="pic"></div>
+            <div id="box" class="box">
+                <!-- 952*173 -->
+                <div id="content" class="content"></div>   
+            </div>
+        </div>
+        <div id="sztc">
+            <div class="sztc1">
+                <h1>设置</h1>
+                <div class="btn"><button class="button" onclick="save3()">存档</button></div>
+                <div class="btn"><button class="button" onclick="getout()">退出</button></div>
+                <div class="btn" id="ba"><button class="button" onclick="setting()">返回</button></div>
+            </div>
+        </div>
+        <div id="qdtc">
+            <div class="qdtc1">
+                <h1>确定退出？</h1>
+                <div class="btn"><button class="button" onclick="save3(),backtoindex()">存档退出</button></div>
+                <div class="btn"><button class="button" onclick="backtoindex()">直接退出</button></div>
+                <div class="btn"><button class="button" onclick="getout()">返回</button></div>
+            </div>
+        </div>
+    </body>
+    <script>
+    var a = ["可恶，这里守卫太多了",
+        "不能在外面就弄出大动静，得赶快找个防守松懈的地方溜进去。",
+        //小游戏
+        "呼，要冷静…一定要冷静……",
+        "不好，那边有人来了，快躲起来",
+        //小游戏
+        "好险，差点就被发现了，这里离中央控制室应该不远了。",
+        "巡逻守卫：什么人！",
+        "斯里独白：可恶，没办法了，只能上了！",
+        //小游戏
+        "哈哈哈…这不是…真的…（死亡）",
+        "什么意思！该死，这公司果然不正常。这里不能久留，得赶紧完成任务后离开。",
+        "在解决了几个巡逻守卫之后，斯里来到了中央控制室。"
+       ];
+var f = 2;
+var index = 0;
+var alpha = document.getElementById("content");
+// var height = alpha.clientHeight/4;                  //设置字体大小和行距
+// $("#content").css("font-size",height+"px");
+// $("#content").css("line-height",(height+5)+"px");
+if(f==2){
+       alpha.innerHTML= a[f];
+       $("#sl1").css("opacity","0");
+       $("#sl2").css("opacity","1");
+       $("body").css("background-image","url("+"../../Icons/公司场景一.jpg"+")");
+       f++;
+   }
+function bian(){
+   index =0;
+   if(f==3){
+       $("#sl2").css("opacity","1");
+       $("#bjxb").css("opacity","1");
+       $("#bjxb1").css("opacity","1");
+       alpha.innerHTML= a[f];
+   } 
+   if(f==4){
+        
+    window.location.assign("3gscj2.html");
+   }
+   
+   f++;
+}
+</script>
+</html>

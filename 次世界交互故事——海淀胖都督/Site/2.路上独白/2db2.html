@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>次世界</title>
+        <link href="../../MasterCSS/master.css" rel="stylesheet">
+        <link href="ben.css" rel="stylesheet">
+        <script type="text/javascript" src="../../jquery.js"></script>
+        <script type="text/javascript" src="2db.js"></script>
+        <script type="text/javascript" src="../../MasterCss/masterjs.js"></script>
+        <script src="../../存档系统.js"></script>
+    </head>
+    <body onselectstart="return false;">
+        <div id="set" onclick="setting()"><p>设置</p></div>
+        <div id="B2"></div>
+        <div class="dialog" onclick="bian();">
+            <div class="pic"></div>
+            <div id="box" class="box">
+                <!-- 952*173 -->
+                <div id="content" class="content" ></div>   
+            </div>
+        </div>
+        <div id="sztc">
+            <div class="sztc1">
+                <h1>设置</h1>
+                <div class="btn"><button class="button" onclick="save2()">存档</button></div>
+                <div class="btn"><button class="button" onclick="getout()">退出</button></div>
+                <div class="btn" id="ba"><button class="button" onclick="setting()">返回</button></div>
+            </div>
+        </div>
+        <div id="qdtc">
+            <div class="qdtc1">
+                <h1>确定退出？</h1>
+                <div class="btn"><button class="button" onclick="save2(),backtoindex()">存档退出</button></div>
+                <div class="btn"><button class="button" onclick="backtoindex()">直接退出</button></div>
+                <div class="btn"><button class="button" onclick="getout()">返回</button></div>
+            </div>
+        </div>
+    </body>
+    <script>
+    var a = ["唉，今天的飞科市依然充满了科技与工业的嘈杂声，一如过去二十多年的每一天。", 
+        "我在这座城市长大，二十多年从未离开她一步。她见证了我在大大小小的考核中脱颖而出，也目睹了我因出身普通家庭而只能成为一名普通的警察。在父母死后，她就是我生活的全部。",
+        "也许正如罗伊尔所说，飞科市，乃至整个世界，都已经希望渺茫。但只要我还活着，就会竭尽全力去让这座城市变得更好。哪怕，只有一点点的改变……",
+        //此处插入视频,下面的空字符是故意的
+        "哦，看那鸟儿，这污浊世界里纯净的圣灵",
+        "什么！刚才那是…什么情况？是我看错了吗？",
+        "一定是太激动导致眼花了，罗伊尔说的对，我不能太激动，一定要冷静下来，可别因为情绪误了大事。"
+       ];
+var f = 4;
+var index = 0;
+var alpha = document.getElementById("content");
+// var height = alpha.clientHeight/4;                  //设置字体大小和行距
+// $("#content").css("font-size",height+"px");
+// $("#content").css("line-height",(height+5)+"px");
+ 
+ 
+alpha.innerHTML= a[f];
+f++;
+$("#B2").css("opacity","1");
+function bian(){
+   index =0;
+    if(f==5){
+       $("#B2").css("opacity","1");
+       alpha.innerHTML= a[f];
+   }
+   if(f==6){
+       enternext_2db2();
+   }
+   f++;
+}
+</script>
+</html>

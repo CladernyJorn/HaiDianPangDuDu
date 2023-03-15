@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <title>队伍介绍页面（测试版）</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" >
+        <script src="../bootstrap/js/jquery-3.4.1.slim.min.js"></script>
+        <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+        <script src="../../存档系统.js"></script>
+        <link href="memin.css" rel="stylesheet">
+        <link href="背景1.css" rel="stylesheet">
+    </head>
+    <body onselectstart="return false;">
+    <!-- <div id="back1">
+        <a href="../游戏主界面/homepage.html" id="back">返回主界面</a>
+    </div> -->
+        <div class="row">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6">
+                <h1>&emsp;团队介绍</h1>
+
+                <div id="teamint1"> 
+                    <p id="teamint">大家好，我们是海淀胖都督，起这个队名是因为我们都是海淀区第六十一周瑜（嘻嘻）。我们是一个由一群准大二的编程初学者组成，致力于通过游戏深刻探讨人性与社会的团队。该项目灵感来源于《黑客帝国》《楚门的世界》《西部世界》等经典电影，是一个玩家控制主角斯里·沃尔兹突破层层难关，一步步揭开事情真相，在命运的十字路口做出关键选择的科幻剧情类游戏。</p>
+                </div>
+                <p id="memint">&emsp;队员介绍</p>
+                <div id="container">
+                <!-- 个人信息图标（用图片） -->
+                    <div id="zjktx"> 
+                        <a href="#" onclick="togglezjk()"><img class="bighead" src="../../Icons/zjkwc.png"></a>
+                    </div>
+                    <div id="wjhtx">
+                        <a href="#" onclick="togglewjh()"><img class="bighead" src="../../Icons/wjhwc.png"></a>
+                    </div>
+                    <div id="wyqtx">
+                        <a href="#" onclick="togglewyq()"><img class="wyqbighead" src="../../Icons/wyqwc.png" ></a>
+                    </div>
+                    <div id="lymtx"> 
+                        <a href="#" onclick="togglelym()"><img class="bighead" src="../../Icons/lymwc.png"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div id="back1">
+                <a href="../游戏主界面/homepage.html" id="back">返回主界面</a>
+                </div>
+            </div>
+        </div>
+        <div id="zjktc" class="tc">
+            <!-- 内含弹出内容 -->
+            <div class="jszp">
+                <img  src="../../Icons/zjk照片.jpg">
+                <h2>&emsp;&emsp;张荐科</h2>
+                <h3>&emsp;&emsp;组长 CIO</h3>
+            </div> 
+            <div class="jswz"> 
+                <p> &emsp;&emsp;我叫张荐科，性别男，毕业于北京市十一学校，现居良乡，俗称京郊野人。</p>
+                <p> &emsp;&emsp;本人爱好多样，普遍多而不精。喜欢乒乓球、羽毛球，擅长飞盘（frisbee），学过围棋，刚到五级；喜欢各类题材电影，对科幻类影视剧涉猎广泛。</p>
+                <p> &emsp;&emsp;项目中我承担统筹、整理以及程序编写。这种短时间超大工作量的项目对于我自己是一个全新并且很有锻炼意义的挑战。希望在这个项目的契机下，我能够和队友们共同完成好一个项目的开发，共同学习，共同进步。</p>
+            </div>
+            <div class="return"><a class="aret" href="#" onclick="togglezjk()">返回</a></div>
+        </div>
+        <div id="wjhtc" class="tc">
+            <!-- 内含弹出内容 -->
+            <div class="jszp">
+                <img  src="../../Icons/wjh照片.jpg">
+                <h2>&emsp;&nbsp;王佳骅</h2>
+                <h3>&emsp;&nbsp;美工 策划</h3>
+            </div> 
+            <div class="jswz"> 
+                <p> &emsp;&emsp;我的名字叫王佳骅，18岁。住在良乡校区南部的博雅楼一带，未婚。</p>
+                <p> &emsp;&emsp;我在北京理工大学计算机学院学习，每天都要coding到晚上8点才能ac。我不抽烟，酒仅止于浅尝。晚上11点睡，每天要睡足8个小时。</p>
+                <p> &emsp;&emsp;睡前，我一定喝一杯温牛奶，然后做20分钟的柔软操，上了床，马上熟睡。一觉到天亮，决不把疲劳和压力，留到第二天。医生都说我很正常。（手动狗头）</p>
+            </div>
+            <div class="return"><a class="aret" href="#" onclick="togglewjh()">返回</a></div>
+        </div>
+        <div id="wyqtc" class="tc">
+            <!-- 内含弹出内容 -->
+            <div class="jszp">
+                <img  src="../../Icons/wyq照片.jpg">
+                <h2>&emsp;&nbsp;王禹桥</h2>
+                <h3>&emsp;策划 程序员 </h3>
+            </div> 
+            <div class="jswz"> 
+                <p> &emsp;&emsp;大家好，我叫王禹桥，来自黑龙江省大庆市，是一个热爱生活的乐天派。</p>    
+                <p> &emsp;&emsp;我爱好长跑、羽毛球、唱歌、话剧……可是没有一项能拿得出手，所以我一直以来都想要找到一项自己可以长期坚持并且能做到“专精”的爱好。</p>
+                <p> &emsp;&emsp;我在团队中是策划（对，要是觉得游戏不好骂我就行），同时负责部分的程序编写以及文案设计，选择这项工作主要是希望挑战自己的创作水平并且弥补高中作文不好的遗憾。
+                这是我第一次参与游戏制作，希望能大家多多包涵。</p>
+            </div>
+            <div class="return"><a class="aret" href="#" onclick="togglewyq()">返回</a></div>
+        </div>
+        <div id="lymtc" class="tc">
+            <!-- 内含弹出内容 -->
+            <div class="jszp">
+                <img  src="../../Icons/lym照片.jpg">
+                <h2>&emsp;&nbsp;刘益鸣</h2>
+                <h3>程序员 文稿编辑</h3>
+            </div> 
+            <div class="jswz"> 
+                <p> &emsp;&emsp;我叫刘益鸣，19岁，来自江苏扬州，一个风景优美的旅游城市。我现在就读于北京理工大学计算机学院，发量正常，日常活动是和乐学编程题鏖战。</p>
+                <p> &emsp;&emsp;平时我兴趣爱好广泛，喜欢弹吉他、打球、打麻将、英雄联盟。吉他还算拿的出手，其余的大多都是人菜瘾大（bushi），其中lol对于低段位炸鱼乐此不疲。</p> 
+                <p> &emsp;&emsp;我在团队中担任程序员和文稿编辑的职位。这次是我第一次参加集体项目，期待能和队友们圆满地完成这次任务，同时收获到项目实战的经验，希望大家多多包涵。</p>    
+            </div>
+            <div class="return"><a class="aret" href="#" onclick="togglelym()">返回</a></div>
+        </div>
+        <script>
+            function togglezjk(){
+                document.getElementById('zjktx').classList.toggle('active')
+                document.getElementById('zjktc').classList.toggle('active')
+            }
+            function togglewjh(){
+                document.getElementById('wjhtx').classList.toggle('active')
+                document.getElementById('wjhtc').classList.toggle('active')
+            }
+            function togglewyq(){
+                document.getElementById('wyqtx').classList.toggle('active')
+                document.getElementById('wyqtc').classList.toggle('active')
+            }
+            function togglelym(){
+                document.getElementById('lymtx').classList.toggle('active')
+                document.getElementById('lymtc').classList.toggle('active')
+            }
+        </script>
+    </body>
+</html>

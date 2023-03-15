@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <title>次世界-成就主界面</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" >
+        <script src="../bootstrap/js/jquery-3.4.1.slim.min.js"></script>
+        <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+        <script src="../../存档系统.js"></script>
+        <link href="../团队介绍/背景1.css" rel="stylesheet">
+        <link href="cjzjmcss.css" rel="stylesheet">
+    </head>
+    <body onload="chengjiu()"onselectstart="return false;">
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8">
+                <div id="box">
+                    <div id="box1">
+                        <div id="box2">
+                            <div id="yourcj">
+                                <h1>您的成就</h1>
+                            </div>
+                            <div class="cj" id="ach1">
+                                <h2>1.饮恨败北</h2>
+                                <p>达成结局“饮恨败北”</p>
+                            </div>
+                            <div class="cj" id="ach2">
+                                <h2>2.轮回降临</h2>
+                                <p>达成结局“轮回降临”</p>
+                            </div>
+                            <div class="cj" id="ach3">
+                                <h2>3.不虚此行</h2>
+                                <p>达成结局“不虚此行”</p>
+                            </div>
+                            <div class="cj" id="ach4">
+                                <h2>4.亦真亦幻</h2>
+                                <p>达成结局“亦真亦幻”</p>
+                            </div>
+                            <div class="cj" id="ach5">
+                                <h2>5.三生有幸</h2>
+                                <p>达成全部四个结局</p>
+                            </div>
+                            <div class="cj" id="ach6">
+                                <h2>6.扫雷大师</h2>
+                                <p>通过最高难度扫雷游戏</p>
+                            </div>
+                            <div class="cj" id="ach7">
+                                <h2>7.节衣缩食</h2>
+                                <p>以0分通过贪吃蛇游戏</p>
+                            </div>
+                            <div class="cj" id="ach8">
+                                <h2>8.头号玩家</h2>
+                                <p>在每个游戏中均表现出色</p>
+                            </div>
+                            <div class="cj" id="tianchong"></div>
+    
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div class="btn"><button class="button" onclick="back()">返回</button></div>
+            </div>
+        </div>
+        <script>
+            function back(){
+                window.location.assign("../游戏主界面/homepage.html");
+            }
+            function chengjiu()
+            {
+                var username=localStorage.getItem("use")
+                var load2=localStorage.getItem(username);
+                var load1=JSON.parse(load2);
+                if(load1.achieve1==1)
+                {
+                    document.getElementById('ach1').classList.toggle('active')
+                }
+                if(load1.achieve2==1)
+                {
+                    document.getElementById('ach2').classList.toggle('active')
+                }
+                if(load1.achieve3==1)
+                {
+                    document.getElementById('ach3').classList.toggle('active')
+                }
+                if(load1.achieve4==1)
+                {
+                    document.getElementById('ach4').classList.toggle('active')
+                }
+                if(load1.achieve1==1 && load1.achieve2==1 && load1.achieve3==1 && load1.achieve4==1)
+                {
+                    load1.achieve5=1;
+                }
+                if(load1.achieve5==1)
+                {
+                    document.getElementById('ach5').classList.toggle('active')
+                }
+                if(load1.achieve6==1)
+                {
+                    document.getElementById('ach6').classList.toggle('active')
+                }
+                if(load1.achieve7==1)
+                {
+                    document.getElementById('ach7').classList.toggle('active')
+                }
+                if(load1.score==360)
+                {
+                    load1.achieve8=1;
+                }
+                if(load1.achieve8==1)
+                {
+                    document.getElementById('ach8').classList.toggle('active')
+                }
+                var d=JSON.stringify(load1);
+                localStorage.setItem(username,d);
+            }
+        </script>
+    </body>
+</html>

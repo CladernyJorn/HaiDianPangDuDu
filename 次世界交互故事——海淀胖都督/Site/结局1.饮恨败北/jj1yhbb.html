@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>次世界</title>
+        <script type="text/javascript" src="../../MasterCss/masterjs.js"></script>
+        <link href="../../MasterCSS/master.css" rel="stylesheet">
+        <link href="ben.css" rel="stylesheet">
+        <script type="text/javascript" src="../../jquery.js"></script>
+        <script type="text/javascript" src="2db.js"></script>
+        <script src="../../存档系统.js"></script>
+    </head>
+    <body onselectstart="return false;"onload="getach3()">
+        <div id="set" onclick="setting()"><p>设置</p></div>
+        <div id="A"></div>
+        <div id="B"></div>
+        <div class="dialog"  >
+            <div id="box" class="box">
+                <!-- 952*173 -->
+                <div id="content" class="content"></div>   
+            </div>
+        </div>
+        <div id="sztc">
+            <div class="sztc1">
+                <h1>设置</h1>
+                <div class="btn"><button class="button" onclick="save2()">存档</button></div>
+                <div class="btn"><button class="button" onclick="getout()">退出</button></div>
+                <div class="btn" id="ba"><button class="button" onclick="setting()">返回</button></div>
+            </div>
+        </div>
+        <div id="qdtc">
+            <div class="qdtc1">
+                <h1>确定退出？</h1>
+                <div class="btn"><button class="button" onclick="save2(),backtoindex()">存档退出</button></div>
+                <div class="btn"><button class="button" onclick="backtoindex()">直接退出</button></div>
+                <div class="btn"><button class="button" onclick="getout()">返回</button></div>
+            </div>
+        </div>
+        <div id="skipvd" onclick="skip()"><p>->跳过</p></div>
+    </body>
+    <script>
+var f = 0;
+var index = 0;
+var alpha = document.getElementById("content");
+// var height = alpha.clientHeight/4;                  //设置字体大小和行距
+// $("#content").css("font-size",height+"px");
+// $("#content").css("line-height",(height+5)+"px");
+$("body").css("background-image","url(../../media/结局一饮恨败北.gif)");
+$(".dialog").css("opacity","0"); 
+$("#skipvd").css("opacity","1");
+function skip(){
+    window.location.assign("结局1.html");
+}
+setTimeout(function(){
+      window.location.assign("../游戏主界面/homepage.html");
+ },15000)
+</script>
+</html>

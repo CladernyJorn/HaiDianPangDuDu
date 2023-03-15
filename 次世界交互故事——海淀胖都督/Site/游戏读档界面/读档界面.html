@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>次世界-读取存档界面</title>
+    <link rel="stylesheet" href="../游戏开始界面/styleLogin.css"/>
+    <script type="text/javascript" src="../../jquery.js"></script>
+    <!-- <script src="ben.js"></script> -->
+    <script src="../../存档系统.js"></script>
+    <style>
+        p{
+            text-align: center;
+            color:white;
+        }
+    </style>
+</head>
+<body onselectstart="return false;">
+    <div class="container">
+        <div class="panel">
+            <div class="content">
+                <div class="switch">
+                    <h1 id="login">读取存档</h1>
+                </div>
+                <form action="">
+                    <div id="userName" class="input" aria-placeholder="用户名"><input type="text" id="Oname"></input></div>
+                    <div id="userName" class="input" aria-placeholder="密码"><input type="password" id="Opass"></input></div>
+                    <button type="button" class="button" onclick="load()">继续冒险</button>
+                    <button type="button" class="button" onclick="restart()">重新冒险</button>
+                    <p>&nbsp;</p>
+                    <p>注：选择重新冒险不会更改原存档位置</p>
+                </form>
+                
+            </div>
+            
+        </div>
+       
+    </div>
+</body>
+
+<script>
+
+    $('.input input').on('focus',function () {
+        $(this).parent().addClass('focus');
+    })
+
+    $('.input input').on('blur',function () {
+        if($(this).val() === '')
+            $(this).parent().removeClass('focus');
+    })
+</script>
+
+</html>

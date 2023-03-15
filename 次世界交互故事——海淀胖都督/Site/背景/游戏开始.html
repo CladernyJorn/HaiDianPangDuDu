@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>游戏开始</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" >
+        <script src="../bootstrap/js/jquery-3.4.1.slim.min.js"></script>
+        <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+        <link href="../../MasterCSS/master.css" rel="stylesheet">
+        <link href="yxks.css".css rel="stylesheet">
+        <script type="text/javascript" src="../../jquery.js"></script>
+    </head>
+    <body onclick="myFunc()"onselectstart="return false;">
+        <div class="row">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-8" id="cont">
+                <h1>欢迎来到飞科市</h1>
+                <h2>单击任意位置以开始游戏</h2>
+            </div>
+            <div class="col-lg-2"></div>
+        </div>
+        <div id="skipvd" onclick="skip()"><p>->跳过</p></div>
+        <script> 
+            function myFunc() { 
+                $("#cont").css("opacity","0");
+                $("body").css("background-image","url(../../media/场景一前.gif)");
+                $("#skipvd").css("opacity","1");
+                setTimeout(function(){
+                window.location.href="../1.与朋友对话/1chat.html"; 
+                },10000)
+             
+            } 
+            function skip(){
+                window.location.href="../1.与朋友对话/1chat.html";
+            }
+         </script> 
+    </body>
+</html>

@@ -1,0 +1,132 @@
+<html>
+    <head>
+        <title>次世界</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css" >
+        <script src="../bootstrap/js/jquery-3.4.1.slim.min.js"></script>
+        <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="../bootstrap/js/bootstrap.min.js"></script>
+        <link href="homepage.css" rel="stylesheet">
+        <script src="homepage.js"></script>
+        <script src="../../存档系统.js"></script>
+        <script type="text/javascript" src="jquery.js"></script>
+    </head>
+    <body onselectstart="return false;">
+        <div id="container">
+            <div class="row">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-4">
+                    <p>&nbsp</p>
+                    <p>&nbsp</p>
+                    <p>&nbsp</p>
+                    <!-- <div class="roll_box">
+                        <div class="roll_img"><img src="../../Icons/1.png" width="600px" height="337px"></div>
+                        <div class="roll_img"><img src="../../Icons/2.png" width="600px" height="337px"></div>
+                        <div class="roll_img"><img src="../../Icons/3.png" width="600px" height="337px"></div>
+                        <div class="roll_img"><img src="../../Icons/4.png" width="600px" height="337px"></div>
+                        <div class="roll_left">&lt;</div>
+                        <div class="roll_right">&gt;</div>
+                        <div class="roll_bottom">
+                            <ul>
+                                <li class="bottom"></li>
+                                <li class="bottom"></li>
+                                <li class="bottom"></li>
+                                <li class="bottom"></li>
+                            </ul>
+                        </div> -->
+                        <div id="slides" class="carousel slide" data-ride="carousel">
+                            <ul class="carousel-indicators">
+                              <li data-target="#slides" data-slide-to="0" class="active"></li>
+                              <li data-target="#slides" data-slide-to="1"></li>
+                              <li data-target="#slides" data-slide-to="2"></li>
+                              <li data-target="#slides" data-slide-to="3"></li>
+                            </ul>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">  <img src="../../Icons/1.png" width="600px" height="337px"> </div>
+                              <div class="carousel-item"><img  src="../../Icons/2.png" width="600px" height="337px">   </div>
+                              <div class="carousel-item"><img  src="../../Icons/3.png" width="600px" height="337px">   </div>
+                              <div class="carousel-item"><img  src="../../Icons/4.png" width="600px" height="337px">   </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#slides" data-slide="prev">
+                              <span class="carousel-control-prev-icon"></span>
+                            </a>
+                            <a class="carousel-control-next" href="#slides" data-slide="next">
+                              <span class="carousel-control-next-icon"></span>
+                            </a>
+                          </div>
+                    <!-- </div> -->
+                    <div class="gamename">次世界</div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="gameintr">
+                        <p>&nbsp;&nbsp;</p>
+                        <p>&emsp;&emsp;“次世界”游戏设备对玩家的毒害引起了轮回教会的警视，教会决定派出一名特工突破该公司的防线并摧毁其中央控制器，因父母的死亡而对该游戏设备深恶痛绝的斯里·沃尔兹主动请缨，承担下了这项艰巨的任务。</p>
+                        <p>&emsp;&emsp;斯里·沃尔兹在这一路会遇到什么？</p>
+                        <p>&emsp;&emsp;等待他的又是什么？</p>
+                        <p>&emsp;&emsp;他真的能发现真相么？</p>
+                        <p>&emsp;&emsp;<strong>开启游戏，一探究竟吧！</strong></p>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="box">
+                        <div class="btn"><button class="button" onclick="start_game()">开始游戏</button></div>
+                        <div class="btn"><button class="button" onclick="continue_game()">读取存档</button></div>
+                        <div class="btn"><button class="button" onclick="open_achievements()">我的成就</button></div>
+                        <div class="btn"><button class="button" onclick="about_us()">关于我们</button></div>
+                        <div class="btn"><button class="button" onclick="window.close()">退出游戏</button></div>
+                    </div>
+                </div>
+                <script>
+                    $(function(){
+                        var index = 0;
+                        var time;
+                        $(".bottom").eq(0).css("background-color","white");
+                        function timeset(){
+                            time = setInterval(function(){
+                                if(index == $(".roll_img").length-1){
+                                    index = 0;
+                                }else{
+                                    index++;
+                                }   
+                                change_img(index);
+                                change_dot(index);
+                            },3000)
+                        }
+                        timeset(); 
+                        $(".roll_left").click(function(){
+                            clearInterval(time);
+                            if(index == 0){
+                                index = $(".roll_img").length-1;
+                            }else{
+                                index--;
+                            }
+                            change_img(index);
+                            change_dot(index);
+                            timeset();
+                        })
+                        $(".roll_right").click(function(){
+                            clearInterval(time);
+                            if(index == $(".roll_img").length - 1){
+                                index = 0;
+                            }else{
+                                index++;
+                            }
+                            change_img(index);
+                            change_dot(index);
+                            timeset();
+                        })
+                        $(".bottom").click(function(){
+                            var order = $(this).index();
+                            index = order;
+                            clearInterval(time);
+                            change_img(index);
+                            change_dot(index);
+                            timeset();
+                        })
+                    })
+                </script>
+            </div>
+        </div>
+    </body>
+</html>

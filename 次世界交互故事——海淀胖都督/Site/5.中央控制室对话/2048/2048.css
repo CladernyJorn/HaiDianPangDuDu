@@ -1,0 +1,179 @@
+body{
+    background-image: url("../../../Icons/4.jpg");
+    background-size: cover;
+    background-color: black;
+}
+h3{
+	text-align:center;
+}
+.g2048{
+	border: 4px solid #bbad9e;
+	width: 500px;
+	height: 500px;
+	margin: 30px auto;
+	position: relative;
+}
+.cell{
+	float: left;
+	height: 25%;
+	width: 25%;
+	box-sizing:border-box;
+	border: 4px solid #bbad9e;
+}
+.number_cell{
+	position: absolute;
+	box-sizing:border-box;
+	width: 25%;
+	height: 25%;
+	padding: 4px;
+	left: 0;
+	top: 0;
+	transition: all 0.2s;
+	color: #fff;
+	font-size: 20px;
+}
+.number_cell_con{
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	position: relative;
+}
+.number_cell_con span{
+	position: absolute;
+	top: 50%;
+	margin-top: -0.5em;
+	left: 0;
+	right: 0;
+}
+#tishi{
+    margin: auto;
+}
+#tishi h2{
+    text-align: center;
+    font-size: 32;
+    font-family: 楷体;
+    color:white;
+}
+#set{
+    width: 5.4%;
+    height:12%;
+    right: 2%;
+    position: absolute;
+    float: right;
+     background-image: url(../../../Icons/设置按钮.png);
+     background-size: cover;
+    margin-top: 0;
+    z-index: 1000;
+}
+#set p{
+    color: white;
+    text-shadow: 0 0 5px lightblue;
+    font-family: 和悦体;
+    margin-top:40%;
+    margin-left: 40%;
+    font-size: 18;
+    transition: 0.5s;
+}
+#set p:hover{
+    font-size: 22;
+    margin-top: 35%;
+    margin-left: 35%;
+    text-shadow: 0 0 10px lightblue;
+}
+#sztc{
+    position: fixed;
+    margin-top: 0%;
+    margin-left:36.5%;
+    width:30%;
+    height:90%;
+    background-image: url(../../../Icons/对话框1.png) ;
+    background-size: 90%,90%;
+    background-repeat:no-repeat;
+    visibility: hidden;
+    z-index: 1000;
+    transform:scale(1,0.9)
+}
+#sztc.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+    z-index: 1000;
+}
+#qdtc{
+    /* position: fixed;
+    width: 30%;
+    height: 68.5%;
+    margin-top: 5%;
+    margin-left: 35%;
+    background-image: url(../Icons/对话框1.png);
+    background-size: cover;
+    visibility: hidden;
+    z-index: 2000; */
+    position: fixed;
+    margin-top: 0%;
+    margin-left:36.5%;
+    width:30%;
+    height:90%;
+    background-image: url(../../../Icons/对话框1.png) ;
+    background-size: 90%,90%;
+    background-repeat:no-repeat;
+    visibility: hidden;
+    z-index: 1000;
+    transform:scale(1,0.9)
+}
+#qdtc.active{
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+    z-index: 2000;
+}
+.sztc1{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    font-size: 2em;
+    font-family: 和悦体;
+    color: #fff;
+    box-shadow:0 5px 30px rgba(0,0,0,0);
+    margin-top: -1%;
+    margin-left:-4%;
+}
+.qdtc1{
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    font-size: 2em;
+    font-family: 和悦体;
+    color: #fff;
+    box-shadow:0 5px 30px rgba(0,0,0,0);
+    margin-top: -1%;
+    margin-left:-4%;
+}
+.btn{
+    
+    margin-bottom: 10px;
+}
+.button{
+    height: 100%;
+    width: 30%;
+    border-radius: 30px;
+    font: 25px 和悦体; color:white;
+    text-align: center;
+    background-image: linear-gradient(gray,rgba(0, 0, 0, 0.911),black,rgba(0, 0, 0, 0.911),gray);
+}
+.button:hover{
+    background-image: url("../../../Icons/按钮.png");
+    background-size: cover;
+    font-weight: 700;
+    font:33px 和悦体 ;color: white;
+    text-align: center;
+    /* transition-duration: 0.1s; */
+    box-shadow: 0 6px 8px 0 black, 0 12px 18px gray;
+}
+.cha{
+    pointer-events: none;
+}
+/*位置*/
+.p00{left:0;top:0;} .p01{left:0; top:25%; } .p02{left:0; top:50%; } .p03{left:0; top:75%; } .p10{left:25%; top:0; } .p11{left:25%; top:25%; } .p12{left:25%; top:50%; } .p13{left:25%; top:75%; } .p20{left:50%; top:0; } .p21{left:50%; top:25%; } .p22{left:50%; top:50%; } .p23{left:50%; top:75%; } .p30{left:75%; top:0; } .p31{left:75%; top:25%; } .p32{left:75%; top:50%; } .p33{left:75%; top:75%; }
+/*颜色*/
+.n2{background: #eee4da; color: #000; } .n4{background: #ece0c8; color: #000; } .n8{background:#f3b179; } .n16{background:#f59563; } .n32{background:#f67c5f; } .n64{background:#f65e3c; } .n128{background:#edce71; } .n256{background:#eccb61; } .n512{background:#edc750; } .n1024{background:#edc631; } .n2048{background:#edc12f; }
