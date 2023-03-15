@@ -10,8 +10,8 @@ To run and play the game, please follow the instructions below.
 
 Please notice that all the temp data are on your own computer instead of remote server.
 
-![Snipaste_2023-03-15_15-57-32](.\README.assets\Snipaste_2023-03-15_15-57-32.png)
+![Snipaste_2023-03-15_15-57-32](https://github.com/CladernyJorn/HaiDianPangDuDu/blob/main/README.assets/Snipaste_2023-03-15_15-57-32.png)
 
 There are four final endings waiting for you to explore.(Only three of them are shown here.)
 
-![image-20230315160009058](.\README.assets\image-20230315160009058.png)
+![image-20230315160009058](https://github.com/CladernyJorn/HaiDianPangDuDu/blob/main/README.assets/image-20230315160009058.png)
